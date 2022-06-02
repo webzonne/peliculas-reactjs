@@ -12,7 +12,6 @@ function Peliculas(){
         }
         TraerDatos();
     },[])
-    console.log(movie);
     return(
         <div>
             {movie ?<div className={style.content}>

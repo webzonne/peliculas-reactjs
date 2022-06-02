@@ -1,0 +1,20 @@
+.content{
+    display: flex;
+    justify-content: center;
+    color:white;
+    width: 80%;
+    margin: auto;
+}
+
+.content div{
+    margin: 20px;
+}
+
+.contentimg{
+    text-align:center;
+}
+
+.contentimg img{
+    width: 400px;
+    height: auto;
+}

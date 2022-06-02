@@ -1,7 +1,12 @@
 .content{
-    border: 1px solid white;
+   cursor: pointer;
+   transition: all .2s ease-in-out ;
+}
+
+.content:hover{
+    transform: scale(1.1);
 }
 
 img{
-    border-radius: 5px;
+    border-radius: 15px;
 }

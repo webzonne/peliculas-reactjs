@@ -4,7 +4,18 @@ export const TraerPeliculas = async () =>{
         const data = await response.json();
         return data;
     }catch(err){
-        alert("no encontrado");
+        alert("SIN CONEXION");
+    }
+   
+}
+
+export const TraerDetalles = async (id) =>{
+    try{
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=381d15531fa0c6e6317d31105419bf57`);
+        const data = await response.json();
+        return data;
+    }catch(err){
+        alert("SIN CONEXION");
     }
    
 }
