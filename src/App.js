@@ -9,12 +9,12 @@ function App() {
   return (
       <div className='App'>
         <header>
-            <Link to ="/"> <Header titulo="PELICULAS" /></Link>
+            <Link to ="/peliculas-reactjs"> <Header titulo="PELICULAS" /></Link>
             <nav>
             </nav>
             <main>
                 <Routes>
-                    <Route path="/" element={<Peliculas/>} />
+                    <Route path="/peliculas-reactjs" element={<Peliculas/>} />
                     <Route path="Sobre/:id" element={<SobrePelicula/>} />
                 </Routes>
             </main>

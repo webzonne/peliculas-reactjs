@@ -1,0 +1,40 @@
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.inputBuscar{
+    position: relative;
+    width: 100%;
+    
+}
+
+.inputBuscar input{
+  height: 10px;
+  border-radius: 5px;
+  padding:10px 5px;
+  width: 100%;
+  border: none!important;
+}
+
+.botonBuscar{
+    position: absolute;
+    right: -10px;
+    top: 1px;
+}
+
+.botonBuscar button{
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background:none;
+}
+
+@media (max-width:770px){
+    .buscar{
+        max-width: 365px;
+    }
+}

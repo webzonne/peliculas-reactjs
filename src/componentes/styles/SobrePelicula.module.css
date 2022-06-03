@@ -4,17 +4,40 @@
     color:white;
     width: 80%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
-.content div{
-    margin: 20px;
+.title{
+    text-align: center;
 }
 
 .contentimg{
     text-align:center;
+    margin: 20px 10px;
 }
 
 .contentimg img{
-    width: 400px;
+    width: 365px;
     height: auto;
+}
+
+.detal{
+    margin: 0px 10px;
+    max-width: 500px;
+    min-width: 365px; 
+}
+
+.description{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.genero{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.genero p:nth-child(2){
+    margin: 0 10px;
 }

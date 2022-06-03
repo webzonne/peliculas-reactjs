@@ -1,6 +1,7 @@
 .content{
    cursor: pointer;
    transition: all .2s ease-in-out ;
+   text-align: center;
 }
 
 .content:hover{
