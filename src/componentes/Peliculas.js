@@ -5,6 +5,7 @@ import Spinner from "./Spinner";
 import style from "./styles/Peliculas.module.css";
 //import {TraerPeliculas} from './TraerPeliculas';
 import { useLocation } from 'react-router-dom';
+import Api from '../utils/Api.json';
 
 function useQuery(){
     return new URLSearchParams(useLocation().search);
@@ -20,13 +21,12 @@ function Peliculas(){
     //const location = useLocation();
     //console.log(location);
     //console.log("este "+location.search);
-
     useEffect(()=>{
         setcargando(true);
         const searchUrl= search
         
-        ? "https://api.themoviedb.org/3/search/movie?api_key=381d15531fa0c6e6317d31105419bf57&query="+search
-        : "https://api.themoviedb.org/3/discover/movie?api_key=381d15531fa0c6e6317d31105419bf57";
+        ? Api.url+"/search/movie?"+Api.apiKey+"&query="+search
+        : Api.url+"/discover/movie?"+Api.apiKey;
         
              fetch(searchUrl)
             .then((result) => result.json())
@@ -43,7 +43,7 @@ function Peliculas(){
         }
         TraerDatos();*/
     },[search])
-    console.log(movie);
+    
     if(cargando){
         return <Spinner/>
     }
