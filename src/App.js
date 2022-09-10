@@ -5,7 +5,7 @@ import { Routes, Route, Link} from "react-router-dom";
 import SobrePelicula from './componentes/SobrePelicula';
 import Header from './componentes/Header';
 
-function App() {
+function App() {  
   return (
       <div className='App'>
         <header>

@@ -20,7 +20,7 @@ export default function SobrePelicula(){
     if(cargando){
         return <Spinner/>
     }
-    console.log(detalle);
+    //console.log(detalle);
     return(
         <div>
             
