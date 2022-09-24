@@ -4,8 +4,14 @@ import Peliculas from './componentes/Peliculas';
 import { Routes, Route, Link} from "react-router-dom";
 import SobrePelicula from './componentes/SobrePelicula';
 import Header from './componentes/Header';
+import { useLocation } from 'react-router-dom';
 
 function App() {  
+  function useQuery(){
+    return new URLSearchParams(useLocation().search);
+}
+const query = useQuery();
+const search = query.get("search"); 
   return (
       <div className='App'>
         <header>
@@ -14,7 +20,7 @@ function App() {
             </nav>
             <main>
                 <Routes>
-                    <Route path="/peliculas-reactjs" element={<Peliculas/>} />
+                    <Route path="/peliculas-reactjs" element={<Peliculas key={search}/>} />
                     <Route path="Sobre/:id" element={<SobrePelicula/>} />
                 </Routes>
             </main>
