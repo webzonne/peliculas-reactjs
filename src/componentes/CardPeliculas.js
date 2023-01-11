@@ -7,8 +7,8 @@ function CardPeliculas({props}){
     return(
         <div className={style.content} key={props.id}>
             <Link to={"/sobre/"+props.id}>
-            <img src={url} alt={props.title} />
-            <h3>{props.title}</h3>
+            <img className={style.imgCard} src={url} alt={props.title} />
+            <p className={style.titleCard}>{props.title}{props.name}</p>
             </Link>
         </div>
     )

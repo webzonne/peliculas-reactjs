@@ -1,6 +1,5 @@
 .content{
-    color:white;
-    text-shadow: 5px 5px 20px #282cff,
-    -4px 2px 40px #282cff;
-    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
 }

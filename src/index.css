@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,4 +17,21 @@ a{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* CUSTOMS CSS */
+.slider-content-img{
+  position: relative;
+}
+.titles-movies-slider{
+  background: linear-gradient(180deg, rgba(104, 0, 0, 0.294) 7.81%, rgba(234, 234, 234, 0) 100%);
+  padding: 30px;
+  position: absolute;
+  left:23px;
+  bottom:250px;
+  opacity: 0.9;
+  font-size:37px;
+  font-weight: 800;
+  z-index: 2;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
