@@ -2,7 +2,7 @@
     display: grid;
     max-width: 1320px;
     margin: auto;
-    grid-template-columns: repeat(auto-fill, 196px);
-    gap: 80px;
+    grid-template-columns: repeat(auto-fill, 231px);
+    gap: 30px;
     justify-content: center;
 }

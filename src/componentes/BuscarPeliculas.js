@@ -16,7 +16,7 @@ export default function BuscarPeliculas() {
         <>
             <div className='container text-white'>
                 <div className="row">
-                    <div className="col-5 ms-auto">
+                    <div className="col-12 col-lg-5 mx-auto mx-md-0 ms-lg-auto">
                         <form className={style.buscar} onSubmit={Busqueda}>
                             <div className={style.inputBuscar}>
                                 <input placeholder='Search...' type="text" onChange={(e) => { setsearch(e.target.value.toLowerCase()) }} />
