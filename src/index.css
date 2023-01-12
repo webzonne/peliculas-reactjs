@@ -27,11 +27,42 @@ code {
   padding: 30px;
   position: absolute;
   left:23px;
-  bottom:250px;
+  bottom:104px;
   opacity: 0.9;
   font-size:37px;
   font-weight: 800;
   z-index: 2;
   color: white;
   font-family: 'Inter', sans-serif;
+}
+
+@media (max-width:838px){
+  .titles-movies-slider{
+    bottom: 38px;
+  }
+}
+
+@media (max-width:777px){
+  .titles-movies-slider{
+    font-size: 28px;
+    bottom: 38px;
+  }
+}
+
+@media (max-width:483px){
+  .titles-movies-slider{
+    font-size:26px;
+    bottom: 28px;
+    padding: 9px;
+    left: 5px;
+  }
+}
+
+@media (max-width:385px){
+  .titles-movies-slider{
+    font-size: 17px;
+    bottom: 28px;
+    padding: 9px;
+    left: 5px;
+  }
 }

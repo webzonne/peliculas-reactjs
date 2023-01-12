@@ -36,9 +36,3 @@
     border: none;
     background:none;
 }
-
-@media (max-width:770px){
-    .buscar{
-        max-width: 365px;
-    }
-}

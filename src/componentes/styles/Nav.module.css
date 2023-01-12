@@ -7,8 +7,24 @@
 }
 .subContent{
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
+}
+
+/* QUERY */
+@media (max-width:980px){
+    .contentNav{
+        position: relative;
+    }
+    .boxSearch{
+        display: none;
+    }
+}
+@media (max-width:991px){
+    .boxSearch{
+        display: none;
+    }
 }
